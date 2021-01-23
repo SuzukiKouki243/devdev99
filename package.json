@@ -1,16 +1,7 @@
 {
-  "name": "node-lifftest helloworld",
+  "name": "testapp",
   "version": "0.0.1",
-  "description": "helloworld Node.js app using Express 4",
-  "engines": {
-    "node": "6.9.4",
-    "npm": "2.1.x"
-  },
-  "main": "index.js",
   "scripts": {
-    "start": "node index.js"
-  },
-  "dependencies": {
-    "express": "4.13.3"
+    "start": "node main.js"
   }
 }
