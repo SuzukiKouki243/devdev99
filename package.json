@@ -6,9 +6,9 @@
     "node": "6.9.4",
     "npm": "2.1.x"
   },
-  "main": "index2.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node index2.js"
+    "start": "node index.js"
   },
   "dependencies": {
     "express": "4.13.3"
