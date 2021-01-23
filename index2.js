@@ -1,5 +1,4 @@
-const fs = require('fs');
-const http = require('http');
+var http = require('http');
  
 var server = http.createServer();
 server.on('request', doRequest);
@@ -9,12 +8,19 @@ console.log('Server running!');
 // リクエストの処理
 function doRequest(req, res) {
 
-  fs.readFile('./lifftest.html', 'UTF-8',
-  (error, data) => {
-    res.writeHead(200, {'Content-Type': 'text/html'});
-    res.write(data);
-    res.end();
-  });
+  res.write('<!DOCTYPE HTML>');
+  res.write('<html>');
+  res.write('<head>');
+  res.write('<meta charset="utf-8">');
+  res.write('<title>こんにちは、のおど・じぇいえす。</title>');
+  res.write('</head>');
+  res.write('<body>');
+  res.write('<section>');
+  res.write('<h1>こんにちは、のおど・じぇいえす。</h1>');
+  res.write('<p>Node.jsでHTMLタグを作れるのかテストですと。</p>');
+  res.write('</section>');
+  res.write('</body>');
+  res.write('</html>');
 
 }
 
