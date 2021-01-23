@@ -1,7 +1,5 @@
-const http = require('http');
 const fs = require('fs');
-
-var http = require('http');
+const http = require('http');
  
 var server = http.createServer();
 server.on('request', doRequest);
@@ -19,3 +17,4 @@ function doRequest(req, res) {
   });
 
 }
+
