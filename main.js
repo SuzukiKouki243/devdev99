@@ -5,4 +5,4 @@ var server = http.createServer(function (request, response) {
     response.write('Hello World\n'); // レスポンスボディに「Hello World」を書き込み
     response.end(); // レスポンス送信を完了する
 });
-server.listen(8080);  //8080番ポートで待ち受け
+server.listen(80);  //8080番ポートで待ち受け
